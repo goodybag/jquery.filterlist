@@ -87,6 +87,7 @@
       return fields.some(function (field) {
         var value = items[field];
 
+        if (!tokens) return false;
         if (value === undefined) return false;
         if (value === null && term !== null) return false;
 
@@ -118,7 +119,7 @@
   $.fn.gb_filterlist.Constructor = FilterList;
 
   var old = $.fn.gb_tablelist;
-  
+
   // NO CONFLICT
   $.fn.gb_filterlist.noConflict = function() {
     $.fn.gb_filterlist = old;

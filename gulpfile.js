@@ -22,8 +22,7 @@ gulp.task('webserver', function() {
   return gulp.src('.')
     .pipe(webserver({
     	port: PORT,
-      livereload: true,
-      open: true
+      open: 'http://localhost::p/test'.replace(':p',PORT)
     }));
 });
 
