@@ -1,13 +1,14 @@
 {
   "name": "jqueryFilter",
   "version": "1.0.0",
-  "description": "",
+  "description": "jquery filter list plugin",
   "main": "gulpfile.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "./node_modules/gulp/bin/gulp.js test",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "keywords": [
     "filter",
@@ -16,6 +17,7 @@
   "author": "Goodybag",
   "license": "MIT",
   "devDependencies": {
+    "bower": "^1.4.1",
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.10.0",
     "gulp-uglify": "^1.2.0",

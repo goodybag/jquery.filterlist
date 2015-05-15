@@ -1,8 +1,10 @@
 #jQuery.filterlist
 
 
+###Test
 ```
-bower install
+npm install
+npm test
 ```
 
 ##License
