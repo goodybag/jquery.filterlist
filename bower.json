@@ -1,0 +1,22 @@
+{
+  "name": "jqueryFilter",
+  "version": "0.0.0",
+  "authors": [
+    "Goodybag"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "liquidmetal": "~1.3.0"
+  },
+  "devDependencies": {
+    "qunit": "~1.18.0"
+  }
+}

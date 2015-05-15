@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Filter</title>
+  <link rel="stylesheet" href="/bower_components/qunit/qunit/qunit.css">
+</head>
+<body>
+
+	<!-- test fixture -->
+	<div data-role="filter-list" 
+			data-input=".search-filter" 
+			data-target=".region-list > li" data-fields="name">
+
+		<input type="text" class="search-filter" placeholder="Filter By Region">
+
+		<ul class="region-list">
+		  <li data-name="Austin, TX">Austin, TX</li>
+		  <li data-name="Houston, TX">Houston, TX</li>
+		  <li data-name="Seattle, WA">Seattle, WA</li>
+		</ul>
+	</div>
+	<!-- -->
+
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/liquidmetal/liquidmetal.js"></script>
+  <script src="/bower_components/qunit/qunit/qunit.js"></script>
+
+  <script src="../src/jquery.filter.js"></script>
+  <script src="./test.js"></script>
+</body>
+</html>
