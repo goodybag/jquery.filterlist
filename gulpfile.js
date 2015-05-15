@@ -23,7 +23,6 @@ gulp.task('webserver', function() {
     .pipe(webserver({
     	port: PORT,
       livereload: true,
-      directoryListing: true,
       open: true
     }));
 });
