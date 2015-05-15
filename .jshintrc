@@ -1,0 +1,6 @@
+{
+	"immed": false,
+	"indent": 2, 
+	"strict" : true, 
+	"laxcomma": true
+}
